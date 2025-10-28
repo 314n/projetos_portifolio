@@ -45,7 +45,7 @@ O algoritmo de detecção segue os seguintes passos:
 - Python  
 - [Lightkurve](https://docs.lightkurve.org/) para manipulação de curvas de luz do TESS  
 - Pandas e Numpy para análise de séries temporais  
-- Matplotlib/Seaborn para visualização de resultados
+- Matplotlib e Seaborn para visualização de resultados
   
 ---
 
