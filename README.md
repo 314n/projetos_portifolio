@@ -45,17 +45,8 @@ O algoritmo de detecção segue os seguintes passos:
 - Python  
 - [Lightkurve](https://docs.lightkurve.org/) para manipulação de curvas de luz do TESS  
 - Pandas e Numpy para análise de séries temporais  
-- Matplotlib/Seaborn para visualização de resultados  
-
----
-
-## Como Usar
-1. Instale as dependências listadas no `requirements.txt`.  
-2. Execute o script principal fornecendo o **TIC** das estrelas que deseja analisar.  
-3. O programa gera:  
-   - Gráficos de curvas de luz com flares destacados.  
-   - Arquivos CSV com métricas de cada flare detectado.  
-
+- Matplotlib/Seaborn para visualização de resultados
+  
 ---
 
 ## Contribuição
