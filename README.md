@@ -20,7 +20,7 @@ O algoritmo de detecção segue os seguintes passos:
 1. **Pré-processamento da curva de luz:**  
    - As curvas de luz do TESS são unidas e normalizadas.  
    - Valores faltantes (NaNs) são removidos para evitar falsos positivos.  
-   - Filtragem de tendência de longo prazo usando suavização ou splines para destacar variações rápidas.
+   - Filtragem de tendência de longo prazo usando suavização para destacar variações rápidas.
 
 2. **Identificação de picos:**  
    - O fluxo normalizado é analisado para encontrar aumentos súbitos acima de um **limiar estatístico**, geralmente definido como `n` vezes o desvio padrão do fluxo.  
@@ -50,7 +50,7 @@ O algoritmo de detecção segue os seguintes passos:
 ---
 
 ## Contribuição
-Contribuições são bem-vindas! Abra **issues** ou envie **pull requests**.  
+Contribuições são bem-vindas!  
 
 ---
 
