@@ -20,7 +20,7 @@ O algoritmo de detecção segue os seguintes passos:
 1. **Pré-processamento da curva de luz:**  
    - As curvas de luz do TESS são unidas e normalizadas.  
    - Valores faltantes (NaNs) são removidos para evitar falsos positivos.  
-   - Filtragem de tendência de longo prazo usando suavização para destacar variações rápidas.
+   - Foi usado o método Savitzky–Golay, recomendao pela documentação da Lightkurve e SciPy para limpar ruídos e tendências (detreding)
 
 2. **Identificação de picos:**  
    - O fluxo normalizado é analisado para encontrar aumentos súbitos acima de um **limiar estatístico**, geralmente definido como `n` vezes o desvio padrão do fluxo.  
