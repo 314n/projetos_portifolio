@@ -23,8 +23,8 @@ O algoritmo de detecção segue os seguintes passos:
    - Foi usado o método Savitzky–Golay, recomendao pela documentação da Lightkurve e SciPy para limpar ruídos e tendências (detreding)
 
 2. **Identificação de picos:**  
-   - O fluxo normalizado é analisado para encontrar aumentos súbitos acima de um **limiar estatístico**, geralmente definido como `n` vezes o desvio padrão do fluxo.  
-   - Cada pico que excede esse limiar é marcado como um candidato a flare.
+   - O fluxo normalizado é analisado para encontrar aumentos súbitos acima de um **limiar estatístico**, definido pela teoria da distribuição Gaussiana.  
+   - Cada pico que excede esse limiar é marcado como um candidato a flare através da biblioteca SciPy.
 
 3. **Caracterização do evento:**  
    - Para cada candidato, o algoritmo determina:  
